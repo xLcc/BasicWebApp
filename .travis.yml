@@ -2,3 +2,9 @@ language: java
 jdk:
 - openjdk8
 script: mvn clean verify
+
+deploy:
+  provider: heroku
+  api_key:
+    secure: 2bda241d-375c-4499-bb63-cd3abbcfed0c
+  app: firstpipeline
